@@ -1,0 +1,224 @@
+﻿<Page x:Class="WeShare.View.Home"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:WeShare.View"
+      xmlns:con="clr-namespace:WeShare.Converters"
+      xmlns:c="clr-namespace:WeShare"
+      mc:Ignorable="d"
+      d:DesignHeight="600" d:DesignWidth="1200"
+      Title="Home">
+
+
+    <Page.Resources>
+        <con:SinConverter x:Key="sinConverter" />
+        <con:CosConverter x:Key="cosConverter" />
+        <RotateTransform x:Key="r1" Angle="0" />
+        <RotateTransform x:Key="r2" Angle="0" />
+
+        <Style x:Key="BotaoRedondo" TargetType="Button">
+            <Setter Property="OverridesDefaultStyle" Value="True"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <Ellipse Name="styleCirculo1" Fill="{TemplateBinding Background}" StrokeThickness="{TemplateBinding BorderThickness}" Stroke="{TemplateBinding BorderBrush}"/>
+                            <Label Foreground="{TemplateBinding Foreground}" FontFamily="{TemplateBinding FontFamily}" FontSize="{TemplateBinding FontSize}" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <ContentPresenter />
+                            </Label>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Cursor" Value="Hand"/>
+                                <Setter TargetName="styleCirculo1" Property="Fill"  Value="#7F000000" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style TargetType="Button" x:Key="BotaoRedondoMedio" BasedOn="{StaticResource BotaoRedondo}">
+            <Setter Property="Width" Value="150"/>
+            <Setter Property="Height" Value="150"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderBrush" Value="White"/>
+            <Setter Property="BorderThickness" Value="1.5"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontFamily"  Value="Bahnschrift Light"/>
+            <Setter Property="FontSize" Value="18"/>
+        </Style>
+        <Style TargetType="Button" x:Key="BotaoRedondoPequeno" BasedOn="{StaticResource BotaoRedondo}">
+            <Setter Property="Width" Value="50"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Opacity" Value="0"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderBrush" Value="White"/>
+            <Setter Property="BorderThickness" Value="1.5"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontFamily"  Value="Arial"/>
+            <Setter Property="FontSize" Value="35"/>
+        </Style>
+
+    </Page.Resources>
+
+    <Grid>
+        <!--Logo-->
+        <Image Source="../img/logo2.png" Stretch="Uniform" Width="470" VerticalAlignment="Top" Margin="0,70,0,0"/>
+
+        <!---Botões Principais-->
+        <WrapPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,200,0,0">
+            <Grid Name="gridBtnUsuario" Width="270" Height="{Binding RelativeSource={RelativeSource Self}, Path=Width}" Background="Transparent">
+                <Button Name="btnUsuario" Content="USUÁRIO" Style="{StaticResource BotaoRedondoMedio}" />
+                <Button Content="+"  Name="btnAdicionarUsuarios">
+                    <Button.Style >
+                        <Style TargetType="Button" BasedOn="{StaticResource BotaoRedondoPequeno}">
+                            <Setter Property="RenderTransform">
+                                <Setter.Value>
+                                    <TranslateTransform X="{Binding Path=Angle,
+                                                Source={StaticResource r1},
+                                                Converter={StaticResource cosConverter},
+                                                ConverterParameter=110}"
+                                    Y="{Binding Path=Angle,
+                                                Source={StaticResource r1},
+                                                Converter={StaticResource sinConverter},
+                                                ConverterParameter=110}"/>
+                                </Setter.Value>
+                            </Setter>
+
+                            <Style.Triggers>
+                                <MultiDataTrigger>
+                                    <MultiDataTrigger.Conditions>
+                                        <Condition  Binding="{Binding RelativeSource={RelativeSource Self}, Path=Opacity, Mode=TwoWay}" Value="0"/>
+                                        <Condition  Binding="{Binding ElementName=btnUsuario, Path=IsMouseOver}" Value="True"/>
+                                    </MultiDataTrigger.Conditions>
+                                    <MultiDataTrigger.EnterActions>
+                                        <RemoveStoryboard BeginStoryboardName="Entrar" />
+                                        <RemoveStoryboard BeginStoryboardName="Sair" />
+                                        <BeginStoryboard Name="Entrar" HandoffBehavior="Compose">
+                                            <Storyboard>
+                                                <DoubleAnimation Storyboard.TargetProperty="Width"   From="1" To="50" Duration="0:0:0.4" />
+                                                <DoubleAnimation Storyboard.TargetProperty="Height"   From="1" To="50" Duration="0:0:0.4" />
+                                                <DoubleAnimation  Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.4"/>
+                                                <DoubleAnimationUsingKeyFrames  Storyboard.Target="{StaticResource r1}"
+                                                                                                           Storyboard.TargetProperty="Angle"
+                                                                                                           Duration="0:0:0.4" 
+                                                                                                           RepeatBehavior="1x" >
+                                                    <LinearDoubleKeyFrame Value="-40" KeyTime="0:0:0"/>
+                                                    <LinearDoubleKeyFrame Value="80" KeyTime="0:0:0.2"/>
+                                                    <LinearDoubleKeyFrame Value="130" KeyTime="0:0:0.4"/>
+                                                </DoubleAnimationUsingKeyFrames>
+                                            </Storyboard>
+                                        </BeginStoryboard>
+                                    </MultiDataTrigger.EnterActions>
+                                </MultiDataTrigger>
+                                <MultiDataTrigger>
+                                    <MultiDataTrigger.Conditions>
+                                        <Condition  Binding="{Binding RelativeSource={RelativeSource Self}, Path=Opacity,Mode=TwoWay}" Value="1"/>
+                                        <Condition  Binding="{Binding ElementName=gridBtnUsuario, Path=IsMouseOver}" Value="False"/>
+                                        <Condition  Binding="{Binding ElementName=btnUsuario, Path=IsMouseOver}" Value="False"/>
+                                    </MultiDataTrigger.Conditions>
+                                    <MultiDataTrigger.EnterActions>
+                                        <RemoveStoryboard BeginStoryboardName="Entrar" />
+                                        <RemoveStoryboard BeginStoryboardName="Sair" />
+                                        <BeginStoryboard Name="Sair" HandoffBehavior="Compose">
+                                            <Storyboard>
+                                                <DoubleAnimation Storyboard.TargetProperty="Width"  To="20" Duration="0:0:0.3" />
+                                                <DoubleAnimation Storyboard.TargetProperty="Height"  To="20" Duration="0:0:0.3" />
+                                                <DoubleAnimation From="130" To="190" Storyboard.Target="{StaticResource r1}" Storyboard.TargetProperty="Angle" Duration="0:0:0.3"  RepeatBehavior="1x"/>
+                                                <DoubleAnimation  Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.3"/>
+                                            </Storyboard>
+                                        </BeginStoryboard>
+                                    </MultiDataTrigger.EnterActions>
+                                </MultiDataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+                <Button Content="-" Name="btnConsultarUsuarios" RenderTransformOrigin="0.5,0.5" >
+                    <Button.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleX="0.75"/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="110"/>
+                        </TransformGroup>
+                    </Button.RenderTransform>
+                    <Button.Style >
+                        <Style TargetType="Button" BasedOn="{StaticResource BotaoRedondoPequeno}">
+                            <Setter Property="RenderTransform">
+                                <Setter.Value>
+                                    <TranslateTransform X="{Binding Path=Angle,
+                                                Source={StaticResource r2},
+                                                Converter={StaticResource cosConverter},
+                                                ConverterParameter=110}"
+                                    Y="{Binding Path=Angle,
+                                                Source={StaticResource r2},
+                                                Converter={StaticResource sinConverter},
+                                                ConverterParameter=110}"/>
+                                </Setter.Value>
+                            </Setter>
+                            <Style.Triggers>
+                                <MultiDataTrigger>
+                                    <MultiDataTrigger.Conditions>
+                                        <Condition  Binding="{Binding RelativeSource={RelativeSource Self}, Path=Opacity, Mode=TwoWay}" Value="0"/>
+                                        <Condition  Binding="{Binding ElementName=btnUsuario, Path=IsMouseOver}" Value="True"/>
+                                    </MultiDataTrigger.Conditions>
+                                    <MultiDataTrigger.EnterActions>
+                                        <RemoveStoryboard BeginStoryboardName="Entrar" />
+                                        <RemoveStoryboard BeginStoryboardName="Sair" />
+                                        <BeginStoryboard Name="Entrar" HandoffBehavior="Compose">
+                                            <Storyboard>
+                                                <DoubleAnimation Storyboard.TargetProperty="Width"   From="1" To="50" Duration="0:0:0.5" />
+                                                <DoubleAnimation Storyboard.TargetProperty="Height"   From="1" To="50" Duration="0:0:0.5" />
+                                                <DoubleAnimation  Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.5"/>
+                                                <DoubleAnimationUsingKeyFrames  Storyboard.Target="{StaticResource r2}"
+                                                                                                           Storyboard.TargetProperty="Angle"
+                                                                                                           Duration="0:0:0.5" 
+                                                                                                           RepeatBehavior="1x" >
+                                                    <LinearDoubleKeyFrame Value="-40" KeyTime="0:0:0"/>
+                                                    <LinearDoubleKeyFrame Value="40" KeyTime="0:0:3"/>
+                                                    <LinearDoubleKeyFrame Value="100" KeyTime="0:0:0.5"/>
+                                                </DoubleAnimationUsingKeyFrames>
+                                            </Storyboard>
+                                        </BeginStoryboard>
+                                    </MultiDataTrigger.EnterActions>
+                                </MultiDataTrigger>
+                                <MultiDataTrigger>
+                                    <MultiDataTrigger.Conditions>
+                                        <Condition  Binding="{Binding RelativeSource={RelativeSource Self}, Path=Opacity,Mode=TwoWay}" Value="1"/>
+                                        <Condition  Binding="{Binding ElementName=gridBtnUsuario, Path=IsMouseOver}" Value="False"/>
+                                        <Condition  Binding="{Binding ElementName=btnUsuario, Path=IsMouseOver}" Value="False"/>
+                                    </MultiDataTrigger.Conditions>
+                                    <MultiDataTrigger.EnterActions>
+                                        <RemoveStoryboard BeginStoryboardName="Entrar" />
+                                        <RemoveStoryboard BeginStoryboardName="Sair" />
+                                        <BeginStoryboard Name="Sair" HandoffBehavior="Compose">
+                                            <Storyboard>
+                                                <DoubleAnimation Storyboard.TargetProperty="Width"  To="20" Duration="0:0:0.4" />
+                                                <DoubleAnimation Storyboard.TargetProperty="Height"  To="20" Duration="0:0:0.4" />
+                                                <DoubleAnimation From="100" To="190" Storyboard.Target="{StaticResource r2}" Storyboard.TargetProperty="Angle" Duration="0:0:0.5"  RepeatBehavior="1x"/>
+                                                <DoubleAnimation  Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.5"/>
+                                            </Storyboard>
+                                        </BeginStoryboard>
+                                    </MultiDataTrigger.EnterActions>
+                                </MultiDataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
+            </Grid>
+            <Button Margin="-40,0,0,0"  Content="MODERAÇÃO" Style="{StaticResource BotaoRedondoMedio}" />
+            <Button Content="ESTATÍSTICA"  Style="{StaticResource BotaoRedondoMedio}" />
+            <Button Content="FEEDBACK" Style="{StaticResource BotaoRedondoMedio}" Margin="0"/>
+        </WrapPanel>
+
+        <!--Créditos e direitos-->
+        <Label VerticalAlignment="Bottom" HorizontalAlignment="Center" Foreground="White" FontSize="15" Margin="0,0,0,30">
+            All rights reserved to Evil Corp
+        </Label>
+
+    </Grid>
+</Page>

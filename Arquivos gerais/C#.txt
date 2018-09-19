@@ -1,0 +1,13 @@
+Loja de roupas 
+Artigo Natalinos
+Site de compartilhamento de videos WeShare
+
+
+
+C# 
+Stretch ele define como a imagem deve ser esticada.
+WrapPanel empacota os paineis, ele comprime td oq esta dentro dele.
+Stroke - cor da borda
+Thickness é largura
+
+

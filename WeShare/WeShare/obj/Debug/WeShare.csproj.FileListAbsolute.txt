@@ -1,0 +1,64 @@
+C:\Users\Computador Sala\Desktop\WeShare\WeShare\WeShare\bin\Debug\WeShare.exe.config
+C:\Users\Computador Sala\Desktop\WeShare\WeShare\WeShare\bin\Debug\WeShare.exe
+C:\Users\Computador Sala\Desktop\WeShare\WeShare\WeShare\bin\Debug\WeShare.pdb
+C:\Users\Computador Sala\Desktop\WeShare\WeShare\WeShare\obj\Debug\WeShare.csprojResolveAssemblyReference.cache
+C:\Users\Computador Sala\Desktop\WeShare\WeShare\WeShare\obj\Debug\View\TelaPrincipal.g.cs
+C:\Users\Computador Sala\Desktop\WeShare\WeShare\WeShare\obj\Debug\App.g.cs
+C:\Users\Computador Sala\Desktop\WeShare\WeShare\WeShare\obj\Debug\WeShare_MarkupCompile.cache
+C:\Users\Computador Sala\Desktop\WeShare\WeShare\WeShare\obj\Debug\WeShare_MarkupCompile.lref
+C:\Users\Computador Sala\Desktop\WeShare\WeShare\WeShare\obj\Debug\View\TelaPrincipal.baml
+C:\Users\Computador Sala\Desktop\WeShare\WeShare\WeShare\obj\Debug\WeShare.g.resources
+C:\Users\Computador Sala\Desktop\WeShare\WeShare\WeShare\obj\Debug\WeShare.Properties.Resources.resources
+C:\Users\Computador Sala\Desktop\WeShare\WeShare\WeShare\obj\Debug\WeShare.csproj.GenerateResource.Cache
+C:\Users\Computador Sala\Desktop\WeShare\WeShare\WeShare\obj\Debug\WeShare.csproj.CoreCompileInputs.cache
+C:\Users\Computador Sala\Desktop\WeShare\WeShare\WeShare\obj\Debug\WeShare.exe
+C:\Users\Computador Sala\Desktop\WeShare\WeShare\WeShare\obj\Debug\WeShare.pdb
+C:\Users\Computador Sala\Desktop\WeShare\WeShare\WeShare\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Computador Sala\Desktop\WeShare\WeShare\WeShare\obj\Debug\View\Home.g.cs
+C:\Users\Computador Sala\Desktop\WeShare\WeShare\WeShare\obj\Debug\View\Home.baml
+C:\Users\Computador Sala\Desktop\WeShare\WeShare\WeShare\obj\Debug\View\Testes.g.cs
+C:\Users\Computador Sala\Desktop\WeShare\WeShare\WeShare\obj\Debug\View\Testes.baml
+F:\WeShare\WeShare\WeShare\bin\Debug\WeShare.exe.config
+F:\WeShare\WeShare\WeShare\bin\Debug\WeShare.exe
+F:\WeShare\WeShare\WeShare\bin\Debug\WeShare.pdb
+F:\WeShare\WeShare\WeShare\obj\Debug\WeShare.csprojResolveAssemblyReference.cache
+F:\WeShare\WeShare\WeShare\obj\Debug\View\Home.g.cs
+F:\WeShare\WeShare\WeShare\obj\Debug\View\TelaPrincipal.g.cs
+F:\WeShare\WeShare\WeShare\obj\Debug\View\Testes.g.cs
+F:\WeShare\WeShare\WeShare\obj\Debug\App.g.cs
+F:\WeShare\WeShare\WeShare\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\WeShare\WeShare\WeShare\obj\Debug\WeShare_MarkupCompile.cache
+F:\WeShare\WeShare\WeShare\obj\Debug\WeShare_MarkupCompile.lref
+F:\WeShare\WeShare\WeShare\obj\Debug\View\Home.baml
+F:\WeShare\WeShare\WeShare\obj\Debug\View\TelaPrincipal.baml
+F:\WeShare\WeShare\WeShare\obj\Debug\View\Testes.baml
+F:\WeShare\WeShare\WeShare\obj\Debug\WeShare.g.resources
+F:\WeShare\WeShare\WeShare\obj\Debug\WeShare.Properties.Resources.resources
+F:\WeShare\WeShare\WeShare\obj\Debug\WeShare.csproj.GenerateResource.Cache
+F:\WeShare\WeShare\WeShare\obj\Debug\WeShare.csproj.CoreCompileInputs.cache
+F:\WeShare\WeShare\WeShare\obj\Debug\WeShare.exe
+F:\WeShare\WeShare\WeShare\obj\Debug\WeShare.pdb
+D:\Desktop\WeShare\WeShare\WeShare\bin\Debug\WeShare.exe.config
+D:\Desktop\WeShare\WeShare\WeShare\bin\Debug\WeShare.exe
+D:\Desktop\WeShare\WeShare\WeShare\bin\Debug\WeShare.pdb
+D:\Desktop\WeShare\WeShare\WeShare\obj\Debug\WeShare.csprojAssemblyReference.cache
+D:\Desktop\WeShare\WeShare\WeShare\obj\Debug\View\Home.g.cs
+D:\Desktop\WeShare\WeShare\WeShare\obj\Debug\View\TelaPrincipal.g.cs
+D:\Desktop\WeShare\WeShare\WeShare\obj\Debug\View\Testes.g.cs
+D:\Desktop\WeShare\WeShare\WeShare\obj\Debug\App.g.cs
+D:\Desktop\WeShare\WeShare\WeShare\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Desktop\WeShare\WeShare\WeShare\obj\Debug\WeShare_MarkupCompile.cache
+D:\Desktop\WeShare\WeShare\WeShare\obj\Debug\WeShare_MarkupCompile.lref
+D:\Desktop\WeShare\WeShare\WeShare\obj\Debug\View\Home.baml
+D:\Desktop\WeShare\WeShare\WeShare\obj\Debug\View\TelaPrincipal.baml
+D:\Desktop\WeShare\WeShare\WeShare\obj\Debug\View\Testes.baml
+D:\Desktop\WeShare\WeShare\WeShare\obj\Debug\WeShare.g.resources
+D:\Desktop\WeShare\WeShare\WeShare\obj\Debug\WeShare.Properties.Resources.resources
+D:\Desktop\WeShare\WeShare\WeShare\obj\Debug\WeShare.csproj.GenerateResource.cache
+D:\Desktop\WeShare\WeShare\WeShare\obj\Debug\WeShare.csproj.CoreCompileInputs.cache
+D:\Desktop\WeShare\WeShare\WeShare\obj\Debug\WeShare.exe
+D:\Desktop\WeShare\WeShare\WeShare\obj\Debug\WeShare.pdb
+C:\Users\Computador Sala\Desktop\WeShare\WeShare\WeShare\bin\Debug\WeShare.Controle.dll
+C:\Users\Computador Sala\Desktop\WeShare\WeShare\WeShare\bin\Debug\WeShare.Controle.pdb
+C:\Users\Computador Sala\Desktop\WeShare\WeShare\WeShare\obj\Debug\View\Login.g.cs
+C:\Users\Computador Sala\Desktop\WeShare\WeShare\WeShare\obj\Debug\View\Login.baml

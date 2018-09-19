@@ -1,0 +1,121 @@
+﻿<Window x:Class="WeShare.View.Testes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WeShare.View"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:my="clr-namespace:WeShare.Converters"
+        mc:Ignorable="d"
+        Title="Testes" Height="500" Width="1000" Background="#FF220100">
+    <Window.Resources>
+        <my:SinConverter x:Key="sinConverter" />
+        <my:CosConverter x:Key="cosConverter" />
+        <RotateTransform x:Key="rotate" Angle="130" />
+        <Style x:Key="btnRedondoPequeno" TargetType="Button">
+            <Setter Property="OverridesDefaultStyle" Value="True"/>
+            <Setter Property="Opacity" Value="0"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <Ellipse x:Name="cbtn" Stroke="White" StrokeThickness="1"/>
+                            <Label  Foreground="White" FontSize="15" HorizontalAlignment="Center"  VerticalAlignment="Center" >
+                                <ContentPresenter  />
+                            </Label>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Cursor" Value="Hand"/>
+                                <Setter TargetName="cbtn" Property="Fill"  Value="#7F000000" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition  Binding="{Binding RelativeSource={RelativeSource Self}, Path=Opacity}" Value="1"/>
+                        <Condition  Binding="{Binding ElementName=Ok, Path=IsMouseOver}" Value="False"/>
+                    </MultiDataTrigger.Conditions>
+                    <MultiDataTrigger.EnterActions>
+
+                        <RemoveStoryboard BeginStoryboardName="ItsOK" />
+
+                        <BeginStoryboard x:Name="ItsOK">
+                            <Storyboard>
+                                <DoubleAnimation  Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.4"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </MultiDataTrigger.EnterActions>
+                  
+                </MultiDataTrigger>
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition  Binding="{Binding RelativeSource={RelativeSource Self}, Path=Opacity}" Value="0"/>
+                        <Condition  Binding="{Binding ElementName=theBigCircle, Path=IsMouseOver}" Value="True"/>
+                    </MultiDataTrigger.Conditions>
+                    <MultiDataTrigger.EnterActions>
+                        <RemoveStoryboard BeginStoryboardName="ItsOK" />
+
+                        <RemoveStoryboard BeginStoryboardName="ItsNotOK" />
+                        <BeginStoryboard x:Name="ItsNotOK">
+                            <Storyboard>
+                                <DoubleAnimationUsingKeyFrames  Storyboard.Target="{StaticResource rotate}"
+                                         Storyboard.TargetProperty="Angle"
+                                        Duration="0:0:0.9" 
+                                         RepeatBehavior="1x" >
+                                    <LinearDoubleKeyFrame Value="-90" KeyTime="0:0:0"/>
+                                    <SplineDoubleKeyFrame Value="20" KeyTime="0:0:02" KeySpline="0, 0, 0.5, 0"/>
+                                    <LinearDoubleKeyFrame Value="80" KeyTime="0:0:6"/>
+                                    <SplineDoubleKeyFrame Value="130" KeyTime="0:0:0.9" KeySpline="0, 0, 0, 0.5"/>
+                                </DoubleAnimationUsingKeyFrames>
+                                <DoubleAnimation  Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.9"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </MultiDataTrigger.EnterActions>
+
+                </MultiDataTrigger>
+
+            </Style.Triggers>
+
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <LinearGradientBrush.RelativeTransform>
+                    <TransformGroup>
+                        <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                        <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                        <RotateTransform Angle="52.125" CenterY="0.5" CenterX="0.5"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </LinearGradientBrush.RelativeTransform>
+                <GradientStop Color="#FF1EA363" Offset="0"/>
+                <GradientStop Color="#FF156F97" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBox Name="txtTeste"  VerticalAlignment="Top" Width="100" Height="30"/>
+        <Grid x:Name="Ok" Margin="0,100,100,0" Width="270" Height="270" Background="#FFA92A2A">
+            <Button Style="{StaticResource btnRedondoPequeno }" Width="50" Height="50"  Content="A" >
+                <Button.RenderTransform>
+                    <TranslateTransform X="{Binding Path=Angle,
+                                                Source={StaticResource rotate},
+                                                Converter={StaticResource cosConverter},
+                                                ConverterParameter=110}"
+                                    Y="{Binding Path=Angle,
+                                                Source={StaticResource rotate},
+                                                Converter={StaticResource sinConverter},
+                                                ConverterParameter=110}"/>
+                </Button.RenderTransform>
+            </Button>
+            <Ellipse x:Name="theBigCircle"  Width="150" Height="150" StrokeThickness="1" Stroke="White" />
+        </Grid>
+
+    </Grid>
+
+</Window>
