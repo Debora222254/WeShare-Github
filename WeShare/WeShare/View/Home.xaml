@@ -217,7 +217,7 @@
 
         <!--Créditos e direitos-->
         <Label VerticalAlignment="Bottom" HorizontalAlignment="Center" Foreground="White" FontSize="15" Margin="0,0,0,30">
-            All rights reserved to Evil Corp
+            All rights reserved to Evil Corp.
         </Label>
 
     </Grid>
