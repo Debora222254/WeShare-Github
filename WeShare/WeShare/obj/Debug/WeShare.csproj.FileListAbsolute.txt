@@ -62,3 +62,47 @@ C:\Users\Computador Sala\Desktop\WeShare\WeShare\WeShare\bin\Debug\WeShare.Contr
 C:\Users\Computador Sala\Desktop\WeShare\WeShare\WeShare\bin\Debug\WeShare.Controle.pdb
 C:\Users\Computador Sala\Desktop\WeShare\WeShare\WeShare\obj\Debug\View\Login.g.cs
 C:\Users\Computador Sala\Desktop\WeShare\WeShare\WeShare\obj\Debug\View\Login.baml
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\WeShare.exe.config
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\WeShare.exe
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\WeShare.pdb
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\WeShare.Controle.dll
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\WeShare.Controle.pdb
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\WeShare.csprojResolveAssemblyReference.cache
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\CadastroDeUsuario.g.cs
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\Home.g.cs
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\Login.g.cs
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\TelaPrincipal.g.cs
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\Testes.g.cs
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\App.g.cs
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\WeShare_MarkupCompile.cache
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\WeShare_MarkupCompile.lref
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\CadastroDeUsuario.baml
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\Home.baml
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\Login.baml
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\TelaPrincipal.baml
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\Testes.baml
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\WeShare.g.resources
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\WeShare.Properties.Resources.resources
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\WeShare.csproj.GenerateResource.Cache
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\WeShare.csproj.CoreCompileInputs.cache
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\WeShare.exe
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\WeShare.pdb
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\Xceed.Wpf.DataGrid.dll
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\ConsultarUsuario.g.cs
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\ConsultarUsuario.baml

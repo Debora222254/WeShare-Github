@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Computador Sala\Desktop\WeShare\WeShare\WeShare\obj\Debug\
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\
 WeShare
 none
 false
 DEBUG;TRACE
-C:\Users\Computador Sala\Desktop\WeShare\WeShare\WeShare\App.xaml
-4986613238
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\App.xaml
+6-721096632
 
-1166943091
-14-1210601319
-View\Home.xaml;View\Login.xaml;View\TelaPrincipal.xaml;View\Testes.xaml;
+13162227375
+20-2056989478
+View\CadastroDeUsuario.xaml;View\ConsultarUsuario.xaml;View\Home.xaml;View\Login.xaml;View\TelaPrincipal.xaml;View\Testes.xaml;
 
 False
 
