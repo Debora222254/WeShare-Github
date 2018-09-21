@@ -18,7 +18,7 @@ namespace WeShare.View
     /// <summary>
     /// Interação lógica para ConsultarUsuario.xam
     /// </summary>
-    public partial class ConsultarUsuario : Window
+    public partial class ConsultarUsuario : Page
     {
         public ConsultarUsuario()
         {
