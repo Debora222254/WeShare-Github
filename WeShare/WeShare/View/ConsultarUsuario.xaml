@@ -9,23 +9,63 @@
       mc:Ignorable="d" 
       Height="557"  RenderOptions.ClearTypeHint="Enabled"
       Title="Consulta De Usuário"  Width="793"  >
-
+    <Page.DataContext>
+        <vm:UsuarioVM/>
+    </Page.DataContext>
     <Grid Background="White">
-        <DockPanel Margin="30">
-            <StackPanel Orientation="Horizontal" Height="40" Background="Aqua" DockPanel.Dock="Top">
+        <DockPanel Margin="30,0,30,30">
+            <!--Titulo-->
+            <Label DockPanel.Dock="Top" Content="Consulta de Usuário" Margin="0,10" FontSize="15"/>
+            <StackPanel Orientation="Horizontal" Height="40" Background="#FF307CC2" DockPanel.Dock="Top">
                 <!--Nome do Usuario-->
-                <Label Content="Nome do usuário:   " VerticalAlignment="Center"/>
+                <Label Content="Nome do usuário:   " VerticalAlignment="Center" Background="{x:Null}"/>
                 <TextBox Width="150" Height="25"/>
                 <!--Cargo do Usuario-->
                 <Label Content="Cargo:   " VerticalAlignment="Center"/>
-                <ComboBox Width="120" Height="25"/>
+                <ComboBox Width="120" Height="25" SelectedIndex="0">
+                    <ComboBoxItem Content="Moderador"/>
+                    <ComboBoxItem Content="Administradorr"/>
+                    <ComboBoxItem Content="Técnico de TI"/>
+                </ComboBox>
                 <!--Id do Usuario-->
                 <Label Content="Id:   " VerticalAlignment="Center"/>
                 <TextBox Width="100" Height="25"/>
                 <!--Botão Pesquisar-->
                 <Button Content="" FontFamily="Segoe MDL2 Assets" Height="25" BorderThickness="1" BorderBrush="White" Foreground="White"  FontWeight="Bold" Background="Transparent" Width="27" Margin="10,0,0,0"/>
             </StackPanel>
-            <ListView Background="Khaki"/>
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Height="30" Background="#FF2AE4DE" >
+                <Label Content="Nome de Usuário"  Margin="73,0,0,0" VerticalAlignment="Center"/>
+                <Label Content="Cargo"  Margin="22,0,0,0" VerticalAlignment="Center"/>
+                <Label Content="Id"  Margin="63,0,0,0" VerticalAlignment="Center"/>
+                <Label Content="DT. Nasc"  Margin="36,0,0,0" VerticalAlignment="Center"/>
+                <Label Content="Salário"  Margin="36,0,0,0" VerticalAlignment="Center"/>
+                <Label Content="Telefone"  Margin="38,0,0,0" VerticalAlignment="Center"/>
+            </StackPanel>
+            <!--lista de Usuarios-->
+            <ListView ItemsSource="{Binding Usuarios}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <Grid Width="50" Height="50">
+                                <Ellipse Fill="Azure"/>
+                                <Ellipse>
+                                    <Ellipse.Fill>
+                                        <ImageBrush ImageSource="{Binding Imagem}"/>
+                                    </Ellipse.Fill>
+                                </Ellipse>
+                            </Grid>
+                            <Label Content="{Binding NomeUsuario}" VerticalContentAlignment="Center" Width="120" Margin="20,0,0,0"/>
+                            <Label Content="Administrador" VerticalAlignment="Center" />
+                            <Label Content="{Binding ID}" VerticalAlignment="Center" Margin="20,0,0,0"/>
+                            <Label Content="25/12/1985" VerticalAlignment="Center"  Margin="20,0,0,0"/>
+                            <Label Content="R$4300,00" VerticalAlignment="Center"  Margin="20,0,0,0"/>
+                            <Label Content="(11)4198-6737" VerticalAlignment="Center"  Margin="20,0,0,0"/>
+                            <Button Height="25" Width="25" Margin="20,0,0,0" Content="" FontFamily="Segoe MDL2 Assets"/>
+                            <Button Height="25" Width="25" Margin="20,0,0,0" Content="" FontFamily="Segoe MDL2 Assets"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </DockPanel>
     </Grid>
 </Page>

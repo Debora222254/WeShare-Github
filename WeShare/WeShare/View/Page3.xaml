@@ -1,0 +1,47 @@
+﻿<Window x:Class="WeShare.View.Page3"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WeShare.View"
+      mc:Ignorable="d" 
+        WindowStyle="None"
+        ResizeMode="NoResize"
+      Height="450" Width="800"
+      Title="Page3">
+
+    <DockPanel LastChildFill="False">
+        <DockPanel Background="BlanchedAlmond" Width="240" DockPanel.Dock="Left" LastChildFill="False">
+            <Image Source="../img/T1.png" DockPanel.Dock="Top" Height="150" Stretch="Fill"/>
+            <Label Content="Menino surta" DockPanel.Dock="Top"/>
+            <Label Content="Data:01/10/2018" DockPanel.Dock="Top"/>
+            <Label Content="Visualizações: 345.098" DockPanel.Dock="Top"/>
+            <Label Content="Denúncias: 7087" DockPanel.Dock="Top"/>
+            <Label Content="Tipo: Agressão" DockPanel.Dock="Top"/>
+            <Label Content="Denúncias:" Background="White" DockPanel.Dock="Top"/>
+            <Rectangle Fill="DarkOliveGreen" Height="108" DockPanel.Dock="Top">
+            </Rectangle>
+            <Grid DockPanel.Dock="Bottom" Height="37">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" Content="Remover" Foreground="White" Background="DarkRed"/>
+                <Button Grid.Column="1" Content="Restringir" Foreground="White" Background="Goldenrod"/>
+                <Button Grid.Column="2" Content="Ignorar" Foreground="White" Background="LawnGreen"/>
+            </Grid>
+        </DockPanel>
+        <DockPanel Background="Honeydew" Height="35" DockPanel.Dock="Top" LastChildFill="False">
+            <Button Width="40" DockPanel.Dock="Right"  Background="DarkTurquoise" Foreground="Wheat" Click="Button_Click">
+                <Image Source="../img/T2.png" Stretch="Fill"/>
+            </Button>
+            <Button Width="40" DockPanel.Dock="Right" Content="-" Background="DarkOrange" Foreground="Wheat" Click="Button_Click_1"/>
+        </DockPanel>
+        <Grid Background="#1EFFC6" Width="560">
+
+
+        </Grid>
+    </DockPanel>
+</Window>
+  

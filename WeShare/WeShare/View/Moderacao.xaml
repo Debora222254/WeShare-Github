@@ -1,0 +1,114 @@
+﻿<Page x:Class="WeShare.View.Moderacao"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WeShare.View"
+      mc:Ignorable="d" 
+      xmlns:vm="clr-namespace:WeShare.ViewModel"
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Moderacao" Width="900" Height="500">
+    <Page.Resources>
+
+    </Page.Resources>
+    <Page.DataContext>
+        <vm:ModeracaoVM/>
+    </Page.DataContext>
+    <Grid>
+      
+        <DockPanel LastChildFill="True">
+            <!--Area Lateral Direita-->
+            <DockPanel LastChildFill="False" Background="Bisque" Width="260" DockPanel.Dock="Right">
+                <!--Visualização do Video-->
+                <MediaElement Name="videoOk" Source="C:\Users\Computador Sala\Desktop\v2.mp4" Height="146" DockPanel.Dock="Top"  />
+                <!--Titulo video-->
+                <Label Content="Matando gatos pelo mundo." DockPanel.Dock="Top" FontSize="15" Background="White"/>
+                <Label Content="Data da Postagem: 22/09/2018" DockPanel.Dock="Top"/>
+                <Label Content="Visualizações : 1.246" DockPanel.Dock="Top"/>
+                <Label Content="Denúncias Totais: 350" DockPanel.Dock="Top"/>
+                <Label Content="Tipo: Maus tratos aos animais" DockPanel.Dock="Top"/>
+                <Label Content="Denúncias:" FontSize="15" Background="White" DockPanel.Dock="Top"/>
+                <Rectangle Fill="Gray" Height="153" DockPanel.Dock="Top"/>
+                <!--Botoes mod-->
+                <Grid Height="37" DockPanel.Dock="Bottom" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0" Content="Remover" Background="#FF7C1010" Foreground="White"/>
+                    <Button Grid.Column="1" Content="Restringir" Background="#FFD28325" Foreground="White"/>
+                    <Button Grid.Column="2" Content="Ignorar" Background="#FF49DA94" Foreground="White"/>
+                </Grid>
+            </DockPanel>
+            <!--Area Lateral Esquerda-->
+            <Grid>
+                <Grid.Background>
+                    <RadialGradientBrush>
+                        <GradientStop Color="#FF17498C" Offset="0.611"/>
+                        <GradientStop Color="#FF8F7F7F" Offset="0.293"/>
+                    </RadialGradientBrush>
+                </Grid.Background>
+                <DockPanel Margin="20,15">
+                    <!--Titulos-->
+
+                    <Label Content="Moderação" FontSize="20" DockPanel.Dock="Top" Foreground="White"/>
+
+                    <!--Barra de Filtros-->
+                    <StackPanel Orientation="Horizontal" Background="#FFE99514" DockPanel.Dock="Top" >
+                        <Label Content="Filtrar por:" FontSize="15"/>
+                        <ComboBox SelectedIndex="0" Margin="4" >
+                            <ComboBoxItem Content="Visualizações"/>
+                            <ComboBoxItem Content="Data"/>
+                            <ComboBoxItem Content="Denúncias"/>
+                        </ComboBox>
+                        <Label Content="Vídeo:" FontSize="15"/>
+                        <TextBox Width="100" Margin="4"/>
+                        <Label Content="Coleção:"  FontSize="15"/>
+                        <TextBox Width="100" Margin="4"/>
+                        <!--Botão Pesquisar-->
+                        <Button Content="" FontFamily="Segoe MDL2 Assets" Height="25" BorderThickness="1" BorderBrush="White" Foreground="White"  FontWeight="Bold" Background="Transparent" Width="27" Margin="10,0,0,0"/>
+                    </StackPanel>
+                    <ListView ItemsSource="{Binding ListaDados}" Name="ListDados" Padding="3" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                        <ListView.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapPanel Width="{Binding ElementName=ListDados, Path=ActualWidth}"/>
+                            </ItemsPanelTemplate>
+                        </ListView.ItemsPanel>
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid Width="137" Height="77" Background="Black">
+                                    <Image Source="../img/T2.png" Stretch="Fill"/>
+                                    <Label >
+                                        <AccessText TextWrapping="WrapWithOverflow" Text="Matando gatos pelo mundo." Foreground="White" FontSize="14" FontFamily="Segoe UI Semibold">
+                                            <AccessText.Effect>
+                                                <DropShadowEffect BlurRadius="2" ShadowDepth="2"/>
+                                            </AccessText.Effect>
+                                        </AccessText>
+
+                                    </Label>
+                                    <WrapPanel Orientation="Horizontal"  HorizontalAlignment="Left" VerticalAlignment="Bottom">
+                                        <Label Content="&#xE909;" Padding="4,3,0,3" Foreground="White" FontFamily="Segoe MDL2 Assets" VerticalAlignment="Center">
+                                            <Label.Effect>
+                                                <DropShadowEffect ShadowDepth="2" BlurRadius="1"/>
+                                            </Label.Effect>
+                                        </Label>
+                                        <Label Content="1.246" Padding="4,3" Foreground="White">
+                                            <Label.Effect>
+                                                <DropShadowEffect ShadowDepth="2" BlurRadius="1"/>
+                                            </Label.Effect>
+                                        </Label>
+                                    </WrapPanel>
+                                    <WrapPanel Orientation="Horizontal" Background="DarkRed" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+                                        <Label Content="&#xE730;" Padding="4,3,0,3" Foreground="White" FontFamily="Segoe MDL2 Assets" VerticalAlignment="Center"/>
+                                        <Label Content="350" Padding="4,3" Foreground="White"/>
+                                    </WrapPanel>
+                                </Grid>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </DockPanel>
+            </Grid>
+        </DockPanel>
+    </Grid>
+</Page>

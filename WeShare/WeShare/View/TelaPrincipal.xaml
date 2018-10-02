@@ -27,13 +27,14 @@
                 <ColumnDefinition Width="40"/>
                 <ColumnDefinition Width="40"/>
             </Grid.ColumnDefinitions>
-            <Rectangle Fill="#9204255C"/>
+            <Rectangle  Name="Menu" Fill="#9204255C" MouseDown="Menu_MouseDown"/>
             <Button Content="-" Grid.Column="1" BorderThickness="0" FontSize="22" Foreground="White" Background="#351147AC" Command="{Binding MinimizarJanelaCMD}"/>
             <Button Content="X" Grid.Column="2" BorderThickness="0" FontSize="16" Foreground="White" Background="#351147AC" Command="{Binding FecharJanelaCMD}"/>
         </Grid>
         <!--Área de Conteúdo da Janela-->
         <Grid Name="ConteúdoPrincipal" Grid.Row="1" >
-          <Frame Name ="Inicial" Navigated="Inicial_Navigated" />
+          
+            <Frame Name ="Inicial" Navigated="Inicial_Navigated" Grid.ColumnSpan="2" />
         </Grid>
     </Grid>
 

@@ -1,0 +1,36 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:WeShare.Style">
+    
+    <Color x:Key="ColorVerde">#00C15E</Color>
+    <SolidColorBrush x:Key="Verde" Color="{DynamicResource ColorVerde}" />
+    <Color x:Key="ColorVerdeEscuro">#00886E</Color>
+    <SolidColorBrush x:Key="VerdeEscuro" Color="{DynamicResource ColorVerdeEscuro}" />
+    <Color x:Key="ColorCiano">#06CBCB</Color>
+    <SolidColorBrush x:Key="Ciano" Color="{DynamicResource ColorCiano}" />
+    <Color x:Key="ColorVermelho">#C11212</Color>
+    <SolidColorBrush x:Key="Vermelho" Color="{DynamicResource ColorVermelho}" />
+    <Color x:Key="ColorCinza">#D1C9B8</Color>
+    <SolidColorBrush x:Key="Cinza" Color="{DynamicResource ColorCinza}" />
+    <Color x:Key="ColorPreto">#1D1D1D</Color>
+    <SolidColorBrush x:Key="Preto" Color="{DynamicResource ColorPreto}" />
+    <Color x:Key="ColorCinzaEscuro">#7A7A79</Color>
+    <SolidColorBrush x:Key="CinzaEscuro" Color="{DynamicResource ColorCinzaEscuro}" />
+    <Color x:Key="ColorAzul">#00438A</Color>
+    <SolidColorBrush x:Key="Azul" Color="{DynamicResource ColorAzul}" />
+    <Color x:Key="ColorAmarelo">#FF9E00</Color>
+    <SolidColorBrush x:Key="Amarelo" Color="{DynamicResource ColorAmarelo}" />
+    <Color x:Key="ColorRoxo">#7700FF</Color>
+    <SolidColorBrush x:Key="Roxo" Color="{DynamicResource ColorRoxo}" />
+    <Color x:Key="ColorBranco">#ffffff</Color>
+    <SolidColorBrush x:Key="Branco" Color="{DynamicResource ColorBranco}" />
+
+
+
+
+
+
+
+
+
+</ResourceDictionary>

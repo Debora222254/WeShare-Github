@@ -10,19 +10,17 @@
       Title="CadastroDeUsuarios"  Width="793"  >
 
     <Grid Background="White">
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="25" Margin="203,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="284" VerticalContentAlignment="Center" FontSize="14" Foreground="#FF302F2F" Text="{Binding Nome, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-        <Label x:Name="label" Content="Nome completo:" HorizontalAlignment="Left" Margin="203,92,0,0" VerticalAlignment="Top" Width="102" Padding="0,5,5,5"/>
-        <Label x:Name="label1" Content="RG:" HorizontalAlignment="Left" Margin="203,166,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="43" Padding="0,5,5,5" Height="25">
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="25" Margin="312,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" VerticalContentAlignment="Center" FontSize="14" Foreground="#FF302F2F" Text="{Binding Nome, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+        <Label x:Name="label" Content="Nome completo:" HorizontalAlignment="Left" Margin="312,92,0,0" VerticalAlignment="Top" Width="122" Padding="0,5,5,5"/>
+        <Label x:Name="label1" Content="RG:" HorizontalAlignment="Left" Margin="203,148,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="43" Padding="0,5,5,5" Height="25">
         </Label>
-        <custom:MaskedTextBox HorizontalAlignment="Left" VerticalAlignment="Top" Margin="203,189,0,0" VerticalContentAlignment="Center" FontSize="14" Foreground="#FF323232" Width="138" Height="25" Mask="00.000.000-0" Text="{Binding Rg, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
-        <Label Content="Data de Expedição:"  HorizontalAlignment="Left" Margin="648,93,0,0" VerticalAlignment="Top" Width="120" Padding="0,5,5,5"/>
-        <DatePicker HorizontalAlignment="Left" SelectedDate="{Binding DataExpedicao, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="648,116,0,0" VerticalAlignment="Top" Width="108" Height="25" Text="01/01/2000" VerticalContentAlignment="Center"/>
+        <custom:MaskedTextBox HorizontalAlignment="Left" VerticalAlignment="Top" Margin="203,172,0,0" VerticalContentAlignment="Center" FontSize="14" Foreground="#FF323232" Width="138" Height="25" Mask="00.000.000-0" Text="{Binding Rg, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
         <Label x:Name="label3" Content="Endereço:" HorizontalAlignment="Left" Margin="439,245,0,0" VerticalAlignment="Top" Padding="0,5,5,5" Width="60"/>
         <TextBox x:Name="textBox1_Copy" HorizontalAlignment="Left" Height="25" Margin="439,270,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199" VerticalContentAlignment="Center" FontSize="14" Foreground="#FF302F2F"/>
         <Label x:Name="label4" Content="Número:" HorizontalAlignment="Left" Margin="665,245,0,0" VerticalAlignment="Top" Padding="0,5,5,5" Width="50"/>
         <TextBox x:Name="textBox1_Copy1" HorizontalAlignment="Left" Height="25" Margin="665,270,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91" VerticalContentAlignment="Center" FontSize="14" Foreground="#FF302F2F" Text="{Binding Numero, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-        <Label x:Name="label4_Copy" Content="Nacionalidade:" HorizontalAlignment="Left" Margin="396,166,0,0" VerticalAlignment="Top" Padding="0,5,5,5" Width="99"/>
-        <TextBox x:Name="textBox1_Copy2" HorizontalAlignment="Left" Height="25" Margin="396,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198" VerticalContentAlignment="Center" FontSize="14" Foreground="#FF302F2F" Text="{Binding Nacionalidade, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+        <Label x:Name="label4_Copy" Content="Nacionalidade:" HorizontalAlignment="Left" Margin="370,148,0,0" VerticalAlignment="Top" Padding="0,5,5,5" Width="112"/>
+        <TextBox x:Name="textBox1_Copy2" HorizontalAlignment="Left" Height="25" Margin="370,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="224" VerticalContentAlignment="Center" FontSize="14" Foreground="#FF302F2F" Text="{Binding Nacionalidade, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
         <Label x:Name="label3_Copy" Content="Cidade:" HorizontalAlignment="Left" Margin="30,297,0,0" VerticalAlignment="Top" Padding="0,5,5,5"/>
         <TextBox x:Name="textBox1_Copy3" HorizontalAlignment="Left" Height="25" Margin="30,323,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="275" VerticalContentAlignment="Center" FontSize="14" Foreground="#FF302F2F"/>
         <Label x:Name="label3_Copy1" Content="Bairro:" HorizontalAlignment="Left" Margin="330,298,0,0" VerticalAlignment="Top" Padding="0,5,5,5" Width="46"/>
@@ -33,8 +31,8 @@
         <custom:MaskedTextBox HorizontalAlignment="Left" VerticalAlignment="Top" Margin="191,380,0,0" VerticalContentAlignment="Center" FontSize="14" Foreground="#FF323232" Width="126" Height="25" Mask="(00) 00000-0000" Text="{Binding Celular, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
         <Label x:Name="label3_Copy4" Content="E-mail:" HorizontalAlignment="Left" Margin="344,355,0,0" VerticalAlignment="Top" Padding="0,5,5,5"/>
         <TextBox x:Name="textBox1_Copy5" HorizontalAlignment="Left" Height="25" Margin="344,380,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="412" VerticalContentAlignment="Center" FontSize="14" Foreground="#FF302F2F" Text="{Binding Email, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-        <Label x:Name="label1_Copy" Content="Gênero:" HorizontalAlignment="Left" Margin="652,165,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="54" Padding="0,5,5,5" Height="25"/>
-        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="652,189,0,0" VerticalAlignment="Top" Width="99" Height="25" SelectedIndex="0">
+        <Label x:Name="label1_Copy" Content="Gênero:" HorizontalAlignment="Left" Margin="652,92,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="54" Padding="0,5,5,5" Height="25"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="652,116,0,0" VerticalAlignment="Top" Width="99" Height="25" SelectedIndex="0" SelectionChanged="comboBox_SelectionChanged">
             <ComboBoxItem Name="m">Masculino</ComboBoxItem>
             <ComboBoxItem Name="f">Feminino</ComboBoxItem>
         </ComboBox>
@@ -54,6 +52,66 @@
         </Button>
         <Rectangle Fill="#FF599DFF" HorizontalAlignment="Left" Height="1" Margin="30,65,0,0" VerticalAlignment="Top" Width="726"/>
         <Label x:Name="label5" Content="Cadastro De Usuário" HorizontalAlignment="Left" Margin="30,20,0,0" VerticalAlignment="Top" FontSize="24" Height="45" Foreground="#FF007ED4" FontFamily="Segoe UI Light" Padding="0,5,5,5"/>
+
+        <Label Content="Cargo:" HorizontalAlignment="Left" Margin="622,146,0,0" VerticalAlignment="Top" Width="56"/>
+        <ComboBox Margin="626,172,42.333,360.333" SelectedIndex="0">
+            <ComboBoxItem Content="Administrador"/>
+        </ComboBox>
+        <TextBox x:Name="textBox1_Copy7" HorizontalAlignment="Left" Height="25" Margin="203,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="88" VerticalContentAlignment="Center" FontSize="14" Foreground="#FF302F2F" IsEnabled="False" Text="000030"/>
+        <Label x:Name="label_Copy" Content="Id:" HorizontalAlignment="Left" Margin="203,93,0,0" VerticalAlignment="Top" Width="63" Padding="0,5,5,5"/>
+        <Grid Background="White">
+            <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="25" Margin="312,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="318" VerticalContentAlignment="Center" FontSize="14" Foreground="#FF302F2F" Text="{Binding Nome, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            <Label x:Name="label2" Content="Nome completo:" HorizontalAlignment="Left" Margin="312,92,0,0" VerticalAlignment="Top" Width="122" Padding="0,5,5,5"/>
+            <Label x:Name="label6" Content="RG:" HorizontalAlignment="Left" Margin="203,143,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="43" Padding="0,5,5,5" Height="25"/>
+            <custom:MaskedTextBox HorizontalAlignment="Left" VerticalAlignment="Top" Margin="203,167,0,0" VerticalContentAlignment="Center" FontSize="14" Foreground="#FF323232" Width="138" Height="25" Mask="00.000.000-0" Text="{Binding Rg, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            <Label x:Name="label7" Content="Endereço:" HorizontalAlignment="Left" Margin="439,245,0,0" VerticalAlignment="Top" Padding="0,5,5,5" Width="60"/>
+            <TextBox x:Name="textBox1_Copy8" HorizontalAlignment="Left" Height="25" Margin="439,270,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199" VerticalContentAlignment="Center" FontSize="14" Foreground="#FF302F2F"/>
+            <Label x:Name="label8" Content="Número:" HorizontalAlignment="Left" Margin="665,245,0,0" VerticalAlignment="Top" Padding="0,5,5,5" Width="50"/>
+            <TextBox x:Name="textBox1_Copy9" HorizontalAlignment="Left" Height="25" Margin="665,270,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91" VerticalContentAlignment="Center" FontSize="14" Foreground="#FF302F2F" Text="{Binding Numero, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            <Label x:Name="label4_Copy1" Content="Nacionalidade:" HorizontalAlignment="Left" Margin="370,143,0,0" VerticalAlignment="Top" Padding="0,5,5,5" Width="112"/>
+            <TextBox x:Name="textBox1_Copy10" HorizontalAlignment="Left" Height="25" Margin="370,167,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="224" VerticalContentAlignment="Center" FontSize="14" Foreground="#FF302F2F" Text="{Binding Nacionalidade, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            <Label x:Name="label3_Copy6" Content="Cidade:" HorizontalAlignment="Left" Margin="30,297,0,0" VerticalAlignment="Top" Padding="0,5,5,5"/>
+            <TextBox x:Name="textBox1_Copy11" HorizontalAlignment="Left" Height="25" Margin="30,323,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="269" VerticalContentAlignment="Center" FontSize="14" Foreground="#FF302F2F"/>
+            <Label x:Name="label3_Copy7" Content="Bairro:" HorizontalAlignment="Left" Margin="330,298,0,0" VerticalAlignment="Top" Padding="0,5,5,5" Width="46"/>
+            <TextBox x:Name="textBox1_Copy12" HorizontalAlignment="Left" Height="25" Margin="330,323,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="232" VerticalContentAlignment="Center" FontSize="14" Foreground="#FF302F2F"/>
+            <Label x:Name="label3_Copy8" Content="Telefone:" HorizontalAlignment="Left" Margin="30,353,0,0" VerticalAlignment="Top" Padding="0,5,5,5" Width="59"/>
+            <custom:MaskedTextBox HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,380,0,0" VerticalContentAlignment="Center" FontSize="14" Foreground="#FF323232" Width="135" Height="25" Mask="(00) 0000-0000" Text="{Binding Telefone, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            <Label x:Name="label3_Copy9" Content="Celular:" HorizontalAlignment="Left" Margin="191,353,0,0" VerticalAlignment="Top" Padding="0,5,5,5" Width="49"/>
+            <custom:MaskedTextBox HorizontalAlignment="Left" VerticalAlignment="Top" Margin="191,380,0,0" VerticalContentAlignment="Center" FontSize="14" Foreground="#FF323232" Width="126" Height="25" Mask="(00) 00000-0000" Text="{Binding Celular, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            <Label x:Name="label3_Copy10" Content="E-mail:" HorizontalAlignment="Left" Margin="344,355,0,0" VerticalAlignment="Top" Padding="0,5,5,5"/>
+            <TextBox x:Name="textBox1_Copy13" HorizontalAlignment="Left" Height="25" Margin="344,380,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="412" VerticalContentAlignment="Center" FontSize="14" Foreground="#FF302F2F" Text="{Binding Email, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            <Label x:Name="label1_Copy1" Content="Gênero:" HorizontalAlignment="Left" Margin="652,92,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="54" Padding="0,5,5,5" Height="25"/>
+            <ComboBox x:Name="comboBox1" HorizontalAlignment="Left" Margin="652,116,0,0" VerticalAlignment="Top" Width="104" Height="25" SelectedIndex="0" SelectionChanged="comboBox_SelectionChanged">
+                <ComboBoxItem x:Name="m1" Content="Masculino"/>
+                <ComboBoxItem x:Name="f1" Content="Feminino"/>
+            </ComboBox>
+            <Label x:Name="label1_Copy4" Content="Cpf:" HorizontalAlignment="Left" Margin="30,247,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="28" Padding="0,5,5,5" Height="23"/>
+            <custom:MaskedTextBox HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,270,0,0" VerticalContentAlignment="Center" FontSize="14" Foreground="#FF323232" Width="210" Height="25" Mask="000.000.000-00" Text="{Binding Cpf, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  />
+            <Label x:Name="label1_Copy5" Content="Cep:" HorizontalAlignment="Left" Margin="265,247,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="87" Padding="0,5,5,5" Height="25"/>
+            <custom:MaskedTextBox HorizontalAlignment="Left" VerticalAlignment="Top" Margin="265,270,0,0" VerticalContentAlignment="Center" FontSize="14" Foreground="#FF323232" Width="148" Height="25" Mask="00000-000" Text="{Binding Cep, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            <Label x:Name="label3_Copy11" Content="Estado:" HorizontalAlignment="Left" Margin="591,298,0,0" VerticalAlignment="Top" Padding="0,5,5,5" Width="47"/>
+            <TextBox x:Name="textBox1_Copy14" HorizontalAlignment="Left" Height="25" Margin="591,323,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="165" VerticalContentAlignment="Center" FontSize="14" Foreground="#FF302F2F"/>
+            <Label x:Name="label2_Copy1" Content="Data de Nascinento:" HorizontalAlignment="Left" Margin="620,144,0,0" VerticalAlignment="Top" Width="123" Padding="0,5,5,5"/>
+            <DatePicker HorizontalAlignment="Left" Margin="620,167,0,0" VerticalAlignment="Top" Width="135" Height="25" Text="01/01/2000" VerticalContentAlignment="Center" SelectedDateFormat="Short" IsTodayHighlighted="True" SelectedDate="{Binding DataNascimento, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            <Button x:Name="button2" Content="Limpar" HorizontalAlignment="Left" Margin="521,467,0,0" VerticalAlignment="Top" Width="112" Height="33" FontSize="14" BorderBrush="{x:Null}" Foreground="#FF5B3E00" Background="#FFFFD100" />
+            <Button x:Name="button3" Content="Cadastrar" HorizontalAlignment="Left" Margin="639,467,0,0" VerticalAlignment="Top" Width="114" Height="33" FontSize="14" BorderBrush="{x:Null}" Background="#FF42EAAD" Foreground="#FF027641" Command="{Binding CadastrarFuncionario, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            <Rectangle Fill="#FFEAEAEA" HorizontalAlignment="Left" Height="143" Margin="30,100,0,0" VerticalAlignment="Top" Width="148" Stroke="#FFCBCBCB"/>
+            <Image x:Name="imgFuncionario1" Source="{Binding FotoFuncionario, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="141" Margin="30,100,0,0" VerticalAlignment="Top" Width="148" Stretch="UniformToFill"/>
+            <Button x:Name="btnImage1" Command="{Binding AdicionarImagem}"  HorizontalAlignment="Left" Margin="129,195,0,0" VerticalAlignment="Top" Width="49" Height="48" Background="{x:Null}" BorderBrush="{x:Null}"/>
+            <Rectangle Fill="#FF599DFF" HorizontalAlignment="Left" Height="1" Margin="30,65,0,0" VerticalAlignment="Top" Width="726"/>
+            <Label x:Name="label9" Content="Cadastro De Usuário" HorizontalAlignment="Left" Margin="30,20,0,0" VerticalAlignment="Top" FontSize="24" Height="45" Foreground="#FF007ED4" FontFamily="Segoe UI Light" Padding="0,5,5,5"/>
+
+            <Label Content="Cargo:" HorizontalAlignment="Left" Margin="622,193,0,0" VerticalAlignment="Top" Width="56"/>
+            <ComboBox Margin="626,218,37.333,314.333" SelectedIndex="0">
+                <ComboBoxItem Content="Administrador"/>
+            </ComboBox>
+            <TextBox x:Name="textBox1_Copy15" HorizontalAlignment="Left" Height="25" Margin="203,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="88" VerticalContentAlignment="Center" FontSize="14" Foreground="#FF302F2F" IsEnabled="False" Text="000030"/>
+            <Label x:Name="label_Copy1" Content="Id:" HorizontalAlignment="Left" Margin="203,93,0,0" VerticalAlignment="Top" Width="63" Padding="0,5,5,5"/>
+            <Label x:Name="label4_Copy2" Content="Nome de Usuário:" HorizontalAlignment="Left" Margin="203,194,0,0" VerticalAlignment="Top" Padding="0,5,5,5" Width="112"/>
+            <TextBox x:Name="textBox1_Copy16" HorizontalAlignment="Left" Height="25" Margin="203,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" VerticalContentAlignment="Center" FontSize="14" Foreground="#FF302F2F" IsEnabled="False" Text="Primeiro Nome + Id"/>
+            <Label x:Name="label4_Copy3" Content="Senha:" HorizontalAlignment="Left" Margin="420,194,0,0" VerticalAlignment="Top" Padding="0,5,5,5" Width="137"/>
+            <TextBox x:Name="textBox1_Copy17" HorizontalAlignment="Left" Height="25" Margin="420,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185" VerticalContentAlignment="Center" FontSize="14" Foreground="#FF302F2F" Text="{Binding Nacionalidade, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" TextChanged="textBox1_Copy17_TextChanged"/>
+        </Grid>
     </Grid>
 </Page>
 

@@ -35,7 +35,7 @@ namespace WeShare.ViewModel
             MinimizarJanelaCMD = new RelayCommand(MinimizarJanela);
             Conteudo = nav;
 
-            Conteudo.Navigate(new View.ConsultarUsuario());
+            Conteudo.Navigate(new View.Home());
         }
     }
 }

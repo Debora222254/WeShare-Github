@@ -35,21 +35,7 @@
             <Setter Property="FontFamily" Value="Segoe UI Semilight"/>
             <Setter Property="Margin" Value="0,6,0,0"/>
         </Style>
-        <Style TargetType="Button" x:Key="designBotaoAcessar">
-            <Setter Property="Margin" Value="0,20,0,0"/>
-            <Setter Property="Height" Value=" 30"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Border Background="#FF0FB674" CornerRadius="11">
-                            <Label  VerticalAlignment="Center" Foreground="White" FontSize="12" HorizontalAlignment="Center">
-                                <ContentPresenter/>
-                            </Label>
-                        </Border>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
+
     </Window.Resources>
     <Grid>
         <!--Imagem de fundo-->
@@ -67,19 +53,19 @@
                     <ColumnDefinition Width="25"/>
                 </Grid.ColumnDefinitions>
                 <Rectangle Fill="Black" Opacity="0.5" Grid.ColumnSpan="3"/>
-                <Button Name="btnMinimizar" Content="-" Grid.Column="1" Click="btnMinimizar_Click" Background="#0CFFFFFF" BorderThickness="0" Foreground="#FFE7E7E7"/>
-                <Button Name="btnFechar" Content ="X" Grid.Column="2" Margin="0.333,0,0,0.333" Height="25" VerticalAlignment="Bottom" Click="btnFechar_Click" BorderThickness="0" Background="#0C00E8FF" Foreground="#FFE7E7E7"/>
+                <Button Name="btnMinimizar" FontFamily="Segoe MDL2 Assets" FontSize="8" Content="" Grid.Column="1" Click="btnMinimizar_Click" Background="#0CFFFFFF" BorderThickness="0" Foreground="#FFE7E7E7"/>
+                <Button Name="btnFechar" FontFamily="Segoe MDL2 Assets" FontSize="10" Content ="&#xE711;" Grid.Column="2"  Height="25" VerticalAlignment="Bottom" Click="btnFechar_Click" BorderThickness="0" Background="#0C00E8FF" Foreground="#FFE7E7E7"/>
             </Grid>
             <StackPanel MinWidth="100" MaxWidth="300" VerticalAlignment="Center"  Grid.Row="1">
                 <!--Frase de apresentação-->
                 <Label  Visibility="Collapsed" Content="Bem-Vindo !"  Style="{StaticResource lblPrincipal}"/>
                 <Image Source="../img/bemvindo.png" Margin="0,0,0,30"/>
                 <!--Caixa personalizada de texto do usuario-->
-                <cp:PlaceHolderTextbox  PlaceHolder ="Usuário" IconSource="../img/man-user.png" Style="{StaticResource defaultUsuario }"  />
+                <cp:PlaceHolderTextbox  PlaceHolder ="Usuário" Text="" IconSource="../img/man-user.png" Style="{StaticResource defaultUsuario }"  />
                 <!--Caixa personalizada de texto da senha-->
                 <cp:PlaceHolderPasswordBox  IconSource="../img/lock-icon.png" PlaceHolder ="Senha" Style="{StaticResource defaultSenha}"/>
                 <!--Botão de enviar-->
-                <Button   Content="ACESSAR" Style="{StaticResource designBotaoAcessar}"/>
+                <Button   Content="ACESSAR" Style="{StaticResource styleButtonConfirm}" Margin="0,20,0,0" Height="30"/>
             </StackPanel>
         </Grid>
 

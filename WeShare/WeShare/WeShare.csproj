@@ -34,6 +34,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -78,12 +84,32 @@
     </Compile>
     <Compile Include="Converters\MovimentoOrbital.cs" />
     <Compile Include="ViewModel\Base.cs" />
+    <Compile Include="ViewModel\ModeracaoVM.cs" />
     <Compile Include="ViewModel\TelaPrincipalVM.cs" />
+    <Compile Include="ViewModel\UsuarioVM.cs" />
+    <Compile Include="View\Anunciantes.xaml.cs">
+      <DependentUpon>Anunciantes.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\CadastroDeUsuario.xaml.cs">
       <DependentUpon>CadastroDeUsuario.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\ConsultarUsuario.xaml.cs">
       <DependentUpon>ConsultarUsuario.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Contato.xaml.cs">
+      <DependentUpon>Contato.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Estatistica.xaml.cs">
+      <DependentUpon>Estatistica.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\EstatisticaCategoria.xaml.cs">
+      <DependentUpon>EstatisticaCategoria.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\EstatisticaComunidade.xaml.cs">
+      <DependentUpon>EstatisticaComunidade.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\EstatisticaGeral.xaml.cs">
+      <DependentUpon>EstatisticaGeral.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
@@ -91,11 +117,20 @@
     <Compile Include="View\Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\Moderacao.xaml.cs">
+      <DependentUpon>Moderacao.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Page3.xaml.cs">
+      <DependentUpon>Page3.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\TelaPrincipal.xaml.cs">
       <DependentUpon>TelaPrincipal.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Testes.xaml.cs">
       <DependentUpon>Testes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TestesNasa.xaml.cs">
+      <DependentUpon>TestesNasa.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -129,11 +164,43 @@
     <Folder Include="Model\" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Style\ButtonStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Style\Color.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Anunciantes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\CadastroDeUsuario.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\ConsultarUsuario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Contato.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Estatistica.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\EstatisticaCategoria.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\EstatisticaComunidade.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\EstatisticaGeral.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -145,11 +212,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\Moderacao.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Page3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\TelaPrincipal.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\Testes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\TestesNasa.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -216,6 +295,26 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="img\f3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\dm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\jm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\mg1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\T1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\T2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="img\v1.mp4" />
+    <Content Include="img\v1.wmv" />
+    <Content Include="img\videoplayback.3gpp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

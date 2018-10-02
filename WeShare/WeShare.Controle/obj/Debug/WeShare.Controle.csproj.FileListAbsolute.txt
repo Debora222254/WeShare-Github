@@ -17,7 +17,6 @@ C:\Users\Computador Sala\Desktop\WeShare\WeShare\WeShare.Controle\obj\Debug\Plac
 C:\Users\Computador Sala\Desktop\WeShare\WeShare\WeShare.Controle\obj\Debug\PlaceHolderPasswordBox.baml
 C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare.Controle\bin\Debug\WeShare.Controle.dll
 C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare.Controle\bin\Debug\WeShare.Controle.pdb
-C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare.Controle\obj\Debug\WeShare.Controle.csprojResolveAssemblyReference.cache
 C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare.Controle\obj\Debug\imagePicker.g.cs
 C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare.Controle\obj\Debug\PlaceHolderPasswordBox.g.cs
 C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare.Controle\obj\Debug\PlaceHolderTextbox.g.cs
@@ -32,3 +31,21 @@ C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare.Controle\obj\Deb
 C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare.Controle\obj\Debug\WeShare.Controle.csproj.CoreCompileInputs.cache
 C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare.Controle\obj\Debug\WeShare.Controle.dll
 C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare.Controle\obj\Debug\WeShare.Controle.pdb
+D:\Desktop\WeShare Github\WeShare\WeShare.Controle\bin\Debug\WeShare.Controle.dll
+D:\Desktop\WeShare Github\WeShare\WeShare.Controle\bin\Debug\WeShare.Controle.pdb
+D:\Desktop\WeShare Github\WeShare\WeShare.Controle\obj\Debug\WeShare.Controle.csprojAssemblyReference.cache
+D:\Desktop\WeShare Github\WeShare\WeShare.Controle\obj\Debug\imagePicker.g.cs
+D:\Desktop\WeShare Github\WeShare\WeShare.Controle\obj\Debug\PlaceHolderPasswordBox.g.cs
+D:\Desktop\WeShare Github\WeShare\WeShare.Controle\obj\Debug\PlaceHolderTextbox.g.cs
+D:\Desktop\WeShare Github\WeShare\WeShare.Controle\obj\Debug\WeShare.Controle_MarkupCompile.cache
+D:\Desktop\WeShare Github\WeShare\WeShare.Controle\obj\Debug\WeShare.Controle_MarkupCompile.lref
+D:\Desktop\WeShare Github\WeShare\WeShare.Controle\obj\Debug\imagePicker.baml
+D:\Desktop\WeShare Github\WeShare\WeShare.Controle\obj\Debug\PlaceHolderPasswordBox.baml
+D:\Desktop\WeShare Github\WeShare\WeShare.Controle\obj\Debug\PlaceHolderTextbox.baml
+D:\Desktop\WeShare Github\WeShare\WeShare.Controle\obj\Debug\WeShare.Controle.g.resources
+D:\Desktop\WeShare Github\WeShare\WeShare.Controle\obj\Debug\WeShare.Controle.Properties.Resources.resources
+D:\Desktop\WeShare Github\WeShare\WeShare.Controle\obj\Debug\WeShare.Controle.csproj.GenerateResource.cache
+D:\Desktop\WeShare Github\WeShare\WeShare.Controle\obj\Debug\WeShare.Controle.csproj.CoreCompileInputs.cache
+D:\Desktop\WeShare Github\WeShare\WeShare.Controle\obj\Debug\WeShare.Controle.dll
+D:\Desktop\WeShare Github\WeShare\WeShare.Controle\obj\Debug\WeShare.Controle.pdb
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare.Controle\obj\Debug\WeShare.Controle.csprojAssemblyReference.cache

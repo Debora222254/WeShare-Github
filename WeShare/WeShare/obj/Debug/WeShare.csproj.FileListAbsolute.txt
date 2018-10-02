@@ -67,7 +67,6 @@ C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\WeShar
 C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\WeShare.pdb
 C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\WeShare.Controle.dll
 C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\WeShare.Controle.pdb
-C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\WeShare.csprojResolveAssemblyReference.cache
 C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\CadastroDeUsuario.g.cs
 C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\Home.g.cs
 C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\Login.g.cs
@@ -106,3 +105,97 @@ C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\sv\Xce
 C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
 C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\ConsultarUsuario.g.cs
 C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\ConsultarUsuario.baml
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\Moderacao.g.cs
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\Moderacao.baml
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\WeShare_Content.g.cs
+D:\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\WeShare.exe.config
+D:\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\WeShare.exe
+D:\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\WeShare.pdb
+D:\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\WeShare.Controle.dll
+D:\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\Xceed.Wpf.AvalonDock.dll
+D:\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+D:\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+D:\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+D:\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\Xceed.Wpf.DataGrid.dll
+D:\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\WeShare.Controle.pdb
+D:\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+D:\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+D:\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+D:\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+D:\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+D:\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+D:\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+D:\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+D:\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+D:\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+D:\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\WeShare.csprojAssemblyReference.cache
+D:\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\CadastroDeUsuario.g.cs
+D:\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\ConsultarUsuario.g.cs
+D:\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\Contato.g.cs
+D:\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\Home.g.cs
+D:\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\Login.g.cs
+D:\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\Moderacao.g.cs
+D:\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\TelaPrincipal.g.cs
+D:\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\Testes.g.cs
+D:\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\App.g.cs
+D:\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\WeShare_Content.g.cs
+D:\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\WeShare_MarkupCompile.cache
+D:\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\WeShare_MarkupCompile.lref
+D:\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\CadastroDeUsuario.baml
+D:\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\ConsultarUsuario.baml
+D:\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\Contato.baml
+D:\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\Home.baml
+D:\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\Login.baml
+D:\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\Moderacao.baml
+D:\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\TelaPrincipal.baml
+D:\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\Testes.baml
+D:\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\WeShare.g.resources
+D:\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\WeShare.Properties.Resources.resources
+D:\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\WeShare.csproj.GenerateResource.cache
+D:\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\WeShare.csproj.CoreCompileInputs.cache
+D:\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\WeShare.csproj.CopyComplete
+D:\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\WeShare.exe
+D:\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\WeShare.pdb
+D:\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\Estatistica.g.cs
+D:\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\Estatistica.baml
+D:\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\LiveCharts.dll
+D:\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\LiveCharts.Wpf.dll
+D:\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\LiveCharts.pdb
+D:\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\LiveCharts.xml
+D:\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\LiveCharts.Wpf.pdb
+D:\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\LiveCharts.Wpf.xml
+D:\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\EstatisticaCategoria.g.cs
+D:\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\EstatisticaComunidade.g.cs
+D:\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\EstatisticaGeral.g.cs
+D:\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\EstatisticaCategoria.baml
+D:\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\EstatisticaComunidade.baml
+D:\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\EstatisticaGeral.baml
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\LiveCharts.dll
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\LiveCharts.pdb
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\LiveCharts.xml
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\Contato.g.cs
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\Estatistica.g.cs
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\EstatisticaCategoria.g.cs
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\EstatisticaComunidade.g.cs
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\EstatisticaGeral.g.cs
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\Contato.baml
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\Estatistica.baml
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\EstatisticaCategoria.baml
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\EstatisticaComunidade.baml
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\EstatisticaGeral.baml
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\WeShare.csprojAssemblyReference.cache
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\WeShare.csproj.CopyComplete
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\App.baml
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\Style\ButtonStyle.baml
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\Style\Color.baml
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\TestesNasa.g.cs
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\TestesNasa.baml
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\Page3.g.cs
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\Page3.baml
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\Anunciantes.g.cs
+C:\Users\Computador Sala\Desktop\WeShare Github\WeShare\WeShare\obj\Debug\View\Anunciantes.baml

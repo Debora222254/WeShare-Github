@@ -210,9 +210,10 @@
                 </Button>
 
             </Grid>
-            <Button Margin="-40,0,0,0"  Content="MODERAÇÃO" Style="{StaticResource BotaoRedondoMedio}" />
-            <Button Content="ESTATÍSTICA"  Style="{StaticResource BotaoRedondoMedio}" />
-            <Button Content="FEEDBACK" Style="{StaticResource BotaoRedondoMedio}" Margin="0"/>
+            <Button Margin="-30,0,0,0"  Content="MODERAÇÃO" Style="{StaticResource BotaoRedondoMedio}" />
+            <Button  Margin="30,0,0,0" Content="ESTATÍSTICA"  Style="{StaticResource BotaoRedondoMedio}" />
+            <Button Margin="30,0,0,0" Content="CONTATO" Style="{StaticResource BotaoRedondoMedio}" />
+            <Button Margin="30,0,0,0"  Content="ANUNCIANTES" Style="{StaticResource BotaoRedondoMedio}" />
         </WrapPanel>
 
         <!--Créditos e direitos-->

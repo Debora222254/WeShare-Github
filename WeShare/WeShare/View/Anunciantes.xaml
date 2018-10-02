@@ -1,0 +1,117 @@
+﻿<Page x:Class="WeShare.View.Anunciantes"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WeShare.View"
+      xmlns:vm="clr-namespace:WeShare.ViewModel"
+      mc:Ignorable="d" 
+       Width="900" Height="400"
+      Title="Anunciantes">
+    <Page.DataContext>
+        <vm:ModeracaoVM/>
+    </Page.DataContext>
+    <Grid Background="{DynamicResource Branco}"   >
+        <DockPanel Margin="10">
+            <Label Content="Anunciantes" DockPanel.Dock="Top" FontSize="20" Foreground="{DynamicResource Azul}" Margin="0,0,0,10" Background="{x:Null}">
+                <Label.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Label.Effect>
+            </Label>
+            <StackPanel Orientation="Horizontal" Height="30" Background="#FF032247" DockPanel.Dock="Top">
+                <StackPanel.Style>
+                    <Style TargetType="StackPanel">
+                        <Style.Resources>
+                            <Style TargetType="Label">
+                                <Setter Property="FontSize" Value="15"/>
+                                <Setter Property="Foreground" Value="White"/>
+                                <Setter Property="FontFamily" Value="Microsoft YaHei UI Light"/>
+                                <Setter Property="Margin" Value="0,0,10,0"/>
+                            </Style>
+                            <Style TargetType="ComboBox">
+                                <Setter Property="FontSize" Value="13"/>
+                                <Setter Property="BorderThickness" Value="0"/>
+                                <Setter Property="Foreground" Value="#00366F"/>
+                                <Setter Property="FontFamily" Value="Microsoft YaHei UI Light"/>
+                                <Setter Property="Margin" Value="0,0,20,0"/>
+                                <Setter Property="Padding" Value="10,1"/>
+                            </Style>
+                        </Style.Resources>
+                    </Style>
+                </StackPanel.Style>
+                <Label Content="Categoria:"/>
+                <ComboBox SelectedIndex="1" VerticalAlignment="Center">
+                    <ComboBoxItem Content="Culinaria"/>
+                    <ComboBoxItem Content="Música"/>
+                    <ComboBoxItem Content="Jogos"/>
+                    <ComboBoxItem Content="Outros"/>
+                </ComboBox>
+                <Label Content="Ordenar por:" />
+                <ComboBox SelectedIndex="2" VerticalAlignment="Center">
+                    <ComboBoxItem Content="Visualizações"/>
+                    <ComboBoxItem Content="Duração"/>
+                    <ComboBoxItem Content="Cliques"/>
+                </ComboBox>
+                <Label Content="Tipo:"/>
+                <ComboBox SelectedIndex="0" VerticalAlignment="Center">
+                    <ComboBoxItem Content="Principal"/>
+                    <ComboBoxItem Content="Normal"/>
+                </ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Height="30" Background="#FF0D6195" >
+                <StackPanel.Style>
+                    <Style TargetType="StackPanel" >
+                        <Style.Resources>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="Foreground" Value="White"/>
+                                <Setter Property="VerticalAlignment" Value="Center"/>
+                                <Setter Property="Margin" Value="5,0,0,0"/>
+                            </Style>
+                        </Style.Resources>
+                    </Style>
+                </StackPanel.Style>
+                <TextBlock Width="100"  Text="Anunciante"  Margin="11,0,0,0" />
+                <TextBlock Width="100" Text="Categoria"  />
+                <TextBlock Width="60"   Text="Tipo"/>
+                <TextBlock Width="110" Text="Produto"  />
+                <TextBlock Width="70"   Text="Inicio" />
+                <TextBlock Width="100" Text="Visualizações" />
+                <TextBlock Width="60"   Text="Cliques" />
+            </StackPanel>
+            <ListView ItemsSource="{Binding ListaDados}" BorderThickness="0" Foreground="White" AlternationCount="2" Background="{x:Null}" >
+                <ListView.Style>
+                    <Style TargetType="ListView">
+                        <Style.Resources>
+                            <Style TargetType="ListViewItem">
+                                <Style.Triggers>
+                                    <Trigger Property="ItemsControl.AlternationIndex"  Value="0">
+                                        <Setter Property="Background" Value="#0D0D0D" />
+                                    </Trigger>
+                                    <Trigger Property="ItemsControl.AlternationIndex"  Value="1">
+                                        <Setter Property="Background" Value="#1D1D1D" />
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Style.Resources>
+                    </Style>
+                </ListView.Style>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <StackPanel Orientation="Horizontal" >
+                                <TextBlock  Width="100"  Text="Thomas" VerticalAlignment="Center" Margin="5,0,0,0" />
+                                <TextBlock Width="100"   Text="Outros" VerticalAlignment="Center"  Margin="5,0,0,0"/>
+                                <TextBlock Width="60"     Text="Principal" VerticalAlignment="Center"  Margin="5,0,0,0"/>
+                                <TextBlock Width="110"   Text="Perfume Naara" VerticalAlignment="Center"  Margin="5,0,0,0"/>
+                                <TextBlock Width="70"     Text="25/08/2018 " VerticalAlignment="Center"  Margin="5,0,0,0"/>
+                                <TextBlock Width="100"   Text="764/1000" VerticalAlignment="Center" Margin="5,0,0,0" />
+                                <TextBlock Width="60"     Text="239" VerticalAlignment="Center" Margin="5,0,0,0"/>
+                                <Button Height="25" VerticalAlignment="Center"  Width="25" Margin="5,0,0,0" Content="" Foreground="White" Background="Transparent" FontFamily="Segoe MDL2 Assets"/>
+                            </StackPanel>
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </DockPanel>
+    </Grid>
+</Page>
